@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>提交待审核APP信息</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/appsubmit.css"/>-->
+    <link rel="stylesheet" type="text/css" href="../static/css/appsubmit.css"/>
+</head>
+<body onload="">
+<h1>
+    提交APP审核信息
+</h1>
+
+<form id="appsubmit_form" method="post">
+    <div class="form-group">
+        <label  class="t">&nbsp;产品&nbsp;ID：&nbsp;</label>
+        <input id="info_appId" type="text" name="appId" class="data"  required>
+    </div>
+    <div class="form-group">
+        <label  class="t">&nbsp;产品名称：&nbsp;</label>
+        <!--<input id="info_appName" value="" name="appName" type="text" class="data"  required>-->
+        <select class="data" >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+
+    </div>
+    <div class="form-group">
+        <label  class="t">&nbsp;适用范围：&nbsp;</label>
+        <input id="info_range" value="" name="rangeApplication" type="text" class="data"  required>
+    </div>
+
+    <div class="form-group">
+        <label  class="t">&nbsp;业务环节：&nbsp;</label>
+        <input id="info_business" value="" name="businessLink" type="text" class="data"  required>
+    </div>
+
+    <div class="form-group">
+        <label  class="t">&nbsp;知识类型：&nbsp;</label>
+        <input id="info_knowledge" value="" name="knowledgeType" type="text" class="data"  required>
+    </div>
+
+    <div class="form-group">
+        <label  class="t">&nbsp;测评文件链接：</label>
+        <input id="info_file" value="" name="testFile" type="text" class="data"  required>
+    </div>
+
+
+    <button type="submit" id="submit_btn"
+            class="button-bar">&nbsp;提&nbsp;交&nbsp </button>
+
+</form>
+
+<button class="button-bar" onclick="location='/welcome'">&nbsp;返&nbsp;回&nbsp</button>
+
+
+<p class="lead" th:text="${alertInfo}">alertInfo</p>
+
+</body>
+</html>

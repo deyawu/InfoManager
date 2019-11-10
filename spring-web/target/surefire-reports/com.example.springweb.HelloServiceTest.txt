@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.springweb.HelloServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.685 s <<< FAILURE! - in com.example.springweb.HelloServiceTest
+testInsert(com.example.springweb.HelloServiceTest)  Time elapsed: 0.12 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<4>
+	at com.example.springweb.HelloServiceTest.testInsert(HelloServiceTest.java:41)
+
+getUsers(com.example.springweb.HelloServiceTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[deyawu]> but was:<[lgy]>
+	at com.example.springweb.HelloServiceTest.getUsers(HelloServiceTest.java:29)
+

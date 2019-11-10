@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎界面</title>
+    <link rel="stylesheet" type="text/css" href="css/welcome.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/welcome.css"/>-->
+</head>
+<body>
+<h1>
+    欢迎登录！
+</h1>
+
+<label class="hello" th:text="${welcome_name}" readonly="true">welcome_name</label>
+
+<div>
+<button class="button-bar" onclick="location='/modifyUserInfo'">&nbsp;查看用户信息&nbsp</button>
+</div>
+
+<div>
+<button class="button-bar" onclick="location='/appsubmit'">&nbsp;提交APP审核信息&nbsp</button>
+</div>
+
+<div>
+<button class="button-bar" onclick="location='/modifyProductInfo'">&nbsp;修改APP审核信息&nbsp</button>
+</div>
+
+<div>
+<button class="button-bar" onclick="location='/index'">&nbsp;登出&nbsp</button>
+</div>
+
+
+<p class="lead" th:text="${welcomeInfo}">welcomeInfo</p>
+
+</body>
+</html>

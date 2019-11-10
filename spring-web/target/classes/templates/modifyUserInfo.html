@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <link rel="stylesheet" type="text/css" href="css/modifyuserinfo.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/modifyuserinfo.css"/>-->
+</head>
+<body>
+<h1>
+    查看用户信息
+</h1>
+
+<form id="welcome_form_modify" method="post">
+    <div class="form-group">
+    <label  class="t">用户ID：</label>
+    <input  class="data" id="register_id" type="text" name="id" th:value="${welcome_id}" readonly="true">
+    </div>
+    <div class="form-group">
+        <label  class="t">用户名：</label>
+        <input  class="data" id="username" type="text" name="name" th:value="${welcome_name}" required>
+    </div>
+    <div class="form-group">
+        <label  class="t">密　码：</label>
+        <input  class="data" id="password"  name="password" type="text" th:value="${welcome_password}" required>
+    </div>
+
+
+    <button type="submit" id="submit_modify"
+            class="button-bar">&nbsp;确认修改&nbsp; </button>
+
+
+</form>
+
+
+<button class="button-bar" onclick="location='/deleteUser'">&nbsp;注销账户&nbsp</button>
+<button class="button-bar" onclick="location='/welcome'">&nbsp;返回&nbsp</button>
+
+
+
+
+</body>
+</html>

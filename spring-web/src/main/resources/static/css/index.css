@@ -1,0 +1,58 @@
+html{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family: sans-serif;
+}
+body{
+    top:100%;
+    left:100%;
+    font-family: sans-serif;
+    background-color: #A17DDB;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom:10px;
+}
+
+.form-group{
+    width: 300px;
+    min-height: 20px;
+    margin: auto;
+    padding: 8px;
+}
+
+.data{
+    text-align: center;
+    vertical-align:middle;
+}
+
+.login_button{
+    width: 50px;
+    min-height: 20px;
+    display:block;
+    border: 1px solid #3762bc;
+    cursor:pointer;
+    margin:auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register_button {
+    width: 50px;
+    min-height: 20px;
+    display:block;
+    border: 1px solid #3762bc;
+    margin:auto;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lead{
+    margin: auto;
+    text-align: center;
+}

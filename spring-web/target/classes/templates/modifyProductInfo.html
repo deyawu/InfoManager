@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改APP审核信息</title>
+    <link rel="stylesheet" type="text/css" href="css/modifyProductInfo.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/modifyProductInfo.css"/>-->
+</head>
+<script  th:inline="javascript" type="text/javascript" >
+    function selectID(optionName, para) { // 下拉框ID,传入参数
+
+        var all_options = document.getElementById(optionName);
+        for(i = 0;i < all_options.length;i++) {
+            if(all_options.options[i].value == para) {
+                all_options[i].selected = true;
+                console.log("out" + para);
+            }
+        }
+    }
+    function getModel() {
+        var rangeApp = [[${html_rangeApplication}]];
+        var bussLink = [[${html_businessLink}]];
+        var knowType = [[${html_knowledgeType}]];
+        console.log(rangeApp + " " + bussLink + " " + knowType);
+        selectID("rangeselect", rangeApp);// 下拉框ID, model中修改的参数
+        selectID("businessLinkselect", bussLink);
+        selectID("knowledgeselect", knowType);
+    }
+</script>
+<body onload='getModel()'>
+<h1>
+    待审核APP信息
+</h1>
+<form id="appsubmit_form" method="post">
+    <div class="form-group">
+        <label  class="t">产品ID：</label>
+        <input  class="data" id="info_appId" type="text" name="appId" th:value="${html_appId}" readonly>
+    </div>
+    <div class="form-group">
+        <label  class="t">产品名称：</label>
+        <input  class="data" id="info_appName" name="appName" type="text" th:value="${html_appName}" required>
+    </div>
+
+
+    <div class="form-group">
+        <label  class="t" th:value="${html_rangeApplication}">适用范围：</label>
+        <!--<input  class="data" id="info_range" name="rangeApplication" type="text"-->
+               <!--th:value="${html_rangeApplication}" required>-->
+        <select class="data" name="rangeApplication" id="rangeselect">
+            <option value="基础共性工业APP">基础共性工业APP</option>
+            <option value="行业通用工业APP">行业通用工业APP</option>
+            <option value="企业专用工业APP">企业专用工业APP</option>
+            <option value="其他工业APP">其他工业APP</option>
+        </select>
+
+    </div>
+
+    <div class="form-group">
+        <label  class="t" th:value="${html_businessLink}">业务环节：</label>
+        <!--<input  class="data" id="info_business"  name="businessLink" type="text"-->
+               <!--th:value="${html_businessLink}" required>-->
+        <select class="data" name="businessLink" id="businessLinkselect">
+            <option value="研发设计工业APP">研发设计工业APP</option>
+            <option value="生产制造工业APP">生产制造工业APP</option>
+            <option value="运维服务工业APP">运维服务工业APP</option>
+            <option value="经营管理工业APP">经营管理工业APP</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label  class="t" th:value="${html_knowledgeType}">知识类型：</label>
+        <!--<input  class="data" id="info_knowledge"  name="knowledgeType" type="text"-->
+               <!--th:value="${html_knowledgeType}" required>-->
+        <select class="data" name="knowledgeType" id="knowledgeselect">
+            <option value="业务信息化类">业务信息化类</option>
+            <option value="数据分析类">数据分析类</option>
+            <option value="知识建模类">知识建模类</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label  class="t">测评文件链接 ：</label>
+        <input  class="data" id="info_file" name="testFile" type="text"
+               th:value="${html_testFile}" required>
+    </div>
+
+
+
+    <button type="submit" class="button-bar">&nbsp;提交修改信息&nbsp </button>
+
+</form>
+
+    <button class="button-bar" onclick="location='/deleteApp'">&nbsp;删除APP&nbsp</button>
+    <button class="button-bar" onclick="location='/welcome'">&nbsp;返回&nbsp</button>
+
+<p class="lead" th:text="${modifyAppInfo}">modifyAppInfo</p>
+
+</body>
+</html>

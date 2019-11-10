@@ -1,0 +1,32 @@
+2019-11-02 15:24:17.500 [http-nio-8080-exec-10] [HikariDataSource.java:110] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+2019-11-02 15:24:17.827 [http-nio-8080-exec-10] [HikariDataSource.java:123] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+2019-11-02 15:24:17.901 [http-nio-8080-exec-10] [HelloController.java:21] INFO  com.example.springweb.controller.HelloController - hello logging 
+2019-11-02 15:24:47.666 [Thread-14] [ExecutorConfigurationSupport.java:208] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-11-02 15:24:47.668 [Thread-14] [HikariDataSource.java:350] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+2019-11-02 15:24:47.679 [Thread-14] [HikariDataSource.java:352] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. 
+2019-11-02 15:24:51.579 [restartedMain] [StartupInfoLogger.java:50] INFO  com.example.springweb.SpringWebApplication - Starting SpringWebApplication on DAEMONYANG-MB0 with PID 69734 (/Users/yangyufei/Documents/app-industry-system-master/spring-web/target/classes started by yangyufei in /Users/yangyufei/Documents/app-industry-system-master/spring-web) 
+2019-11-02 15:24:51.588 [restartedMain] [SpringApplication.java:647] INFO  com.example.springweb.SpringWebApplication - No active profile set, falling back to default profiles: default 
+2019-11-02 15:24:51.756 [restartedMain] [DeferredLog.java:225] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2019-11-02 15:24:51.756 [restartedMain] [DeferredLog.java:225] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2019-11-02 15:24:53.144 [restartedMain] [TomcatWebServer.java:90] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+2019-11-02 15:24:53.164 [restartedMain] [DirectJDKLog.java:173] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2019-11-02 15:24:53.175 [restartedMain] [DirectJDKLog.java:173] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2019-11-02 15:24:53.176 [restartedMain] [DirectJDKLog.java:173] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22] 
+2019-11-02 15:24:53.262 [restartedMain] [DirectJDKLog.java:173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2019-11-02 15:24:53.263 [restartedMain] [ServletWebServerApplicationContext.java:284] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1507 ms 
+2019-11-02 15:24:53.692 [restartedMain] [ExecutorConfigurationSupport.java:171] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2019-11-02 15:24:53.757 [restartedMain] [WelcomePageHandlerMapping.java:58] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index 
+2019-11-02 15:24:53.921 [restartedMain] [OptionalLiveReloadServer.java:57] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2019-11-02 15:24:53.943 [restartedMain] [DirectJDKLog.java:173] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2019-11-02 15:24:53.980 [restartedMain] [TomcatWebServer.java:202] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+2019-11-02 15:24:53.983 [restartedMain] [StartupInfoLogger.java:59] INFO  com.example.springweb.SpringWebApplication - Started SpringWebApplication in 2.817 seconds (JVM running for 3.991) 
+2019-11-02 15:24:59.582 [http-nio-8080-exec-1] [DirectJDKLog.java:173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2019-11-02 15:24:59.583 [http-nio-8080-exec-1] [FrameworkServlet.java:524] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2019-11-02 15:24:59.592 [http-nio-8080-exec-1] [FrameworkServlet.java:546] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms 
+2019-11-02 15:24:59.626 [http-nio-8080-exec-1] [HikariDataSource.java:110] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+2019-11-02 15:24:59.718 [http-nio-8080-exec-1] [HikariDataSource.java:123] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+2019-11-02 15:24:59.746 [http-nio-8080-exec-1] [HelloController.java:19] INFO  com.example.springweb.controller.HelloController - hello logging[null,null,11111, null,null,123, null,null,111, null,null,123456, null,null,123456] 
+2019-11-02 15:57:27.872 [HikariPool-1 housekeeper] [HikariPool.java:766] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m57s906ms). 
+2019-11-02 15:57:51.228 [Thread-16] [ExecutorConfigurationSupport.java:208] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2019-11-02 15:57:51.232 [Thread-16] [HikariDataSource.java:350] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+2019-11-02 15:57:51.245 [Thread-16] [HikariDataSource.java:352] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. 

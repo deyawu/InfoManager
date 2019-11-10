@@ -1,0 +1,49 @@
+html{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family: sans-serif;
+}
+body{
+    top:100%;
+    left:100%;
+    font-family: sans-serif;
+    background-color: #A17DDB;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom:10px;
+}
+
+.data{
+    text-align: center;
+    vertical-align:middle;
+}
+
+
+.form-group{
+    width: 300px;
+    min-height: 20px;
+    padding: 8px;
+    margin:auto;
+}
+
+.button-bar{
+    width: 100px;
+    min-height: 20px;
+    display:block;
+    border: 1px solid #3762bc;
+    cursor:pointer;
+    margin:auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.lead{
+    margin: auto;
+    text-align: center;
+}
